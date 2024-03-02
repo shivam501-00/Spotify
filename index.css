@@ -1,0 +1,56 @@
+:root {
+  --primary-background: black;
+  --text-color: white;
+  --border-items: 2px solid white;
+  --svg-color: rgb(210, 200, 200);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN",
+    "MS Gothic";
+}
+body {
+  background-color: var(--primary-background);
+  color: var(--text-color);
+}
+
+.page-wrapper {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  border: var(--border-items);
+}
+.content {
+  width: 75vw;
+  border: var(--border-items);
+  margin-left: 1rem;
+}
+/*Spotify logo setting*/
+.logo_svg {
+    height: 2rem;
+    width: 4.5rem;
+    filter: brightness(0) invert(1);
+  }
+/* Svg setting from home menu */
+.svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--svg-color);
+  filter: brightness(0) invert(1);
+}
+/* Set content inside list as flex item and make them center of flex */
+.home ul li {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  color: var(--text-color);
+  align-items: center;
+  margin: 0.75rem;
+}
+
+
