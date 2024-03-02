@@ -1,5 +1,6 @@
 :root {
   --primary-background: black;
+  --content-background:#121212;
   --text-color: white;
   --border-items: 2px solid white;
   --svg-color: rgb(210, 200, 200);
@@ -17,13 +18,13 @@ body {
 
 .page-wrapper {
   display: flex;
+  padding: 0.2rem;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  border: var(--border-items);
 }
 .content {
   width: 75vw;
@@ -35,11 +36,13 @@ body {
     height: 2rem;
     width: 4.5rem;
     filter: brightness(0) invert(1);
+    padding: 0.1rem;
   }
 /* Svg setting from home menu */
 .svg {
   height: 1.5rem;
   width: 1.5rem;
+  padding-right: 0.75rem;
   fill: var(--svg-color);
   filter: brightness(0) invert(1);
 }
@@ -51,6 +54,25 @@ body {
   color: var(--text-color);
   align-items: center;
   margin: 0.75rem;
+  font-weight: bold;
 }
 
+.home{
+    background-color: var(--content-background);
+    border-radius: 0.5rem;
+    padding: 1rem;    
+}
+/* Library */
+.library{
+    background-color: var(--content-background);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.75rem;    
 
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
