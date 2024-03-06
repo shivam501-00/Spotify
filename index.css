@@ -10,6 +10,7 @@
   padding: 0;
   font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN",
     "MS Gothic";
+    box-sizing: border-box;
 }
 body {
   background-color: var(--primary-background);
@@ -24,6 +25,7 @@ body {
 .nav {
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
   width: 25vw;
 }
 .content {
@@ -55,24 +57,40 @@ body {
   align-items: center;
   margin: 0.75rem;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .home{
     background-color: var(--content-background);
     border-radius: 0.5rem;
     padding: 1rem;    
+    box-sizing: border-box;
 }
 /* Library */
 .library{
-    background-color: var(--content-background);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin-top: 0.75rem;    
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--content-background);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.75rem;    
 
 }
 
 .heading{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-self: center;
+    width: 100%;
+    font-size: 2rem;
+}
+.cr-list{
+  padding:0rem;
+  height: 0.85rem;
+  width: 0.85rem;
+  align-self: center;
+  margin-left: 5rem;
 }
