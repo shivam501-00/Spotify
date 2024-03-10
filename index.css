@@ -10,7 +10,7 @@
   padding: 0;
   font-family: "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN",
     "MS Gothic";
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 body {
   background-color: var(--primary-background);
@@ -19,6 +19,7 @@ body {
 
 .page-wrapper {
   display: flex;
+  flex-direction: row;
   padding: 0.2rem;
 }
 
@@ -27,9 +28,10 @@ body {
   flex-direction: column;
   /* flex-wrap: wrap; */
   width: 25vw;
+  height: 100vh;
 }
 .content {
-  width: 75vw;
+  width: 70vw;
   border: var(--border-items);
   margin-left: 1rem;
 }
@@ -65,32 +67,56 @@ body {
     border-radius: 0.5rem;
     padding: 1rem;    
     box-sizing: border-box;
+    min-height: 23vh;
 }
 /* Library */
 .library{
   display: flex;
   box-sizing: border-box;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  overflow-x: hidden;
+  position: relative;
   background-color: var(--content-background);
   border-radius: 0.5rem;
   padding: 1rem;
-  margin-top: 0.75rem;    
+  margin-top: 0.5rem; 
+  min-height: 75vh;   
 
 }
 
 .heading{
     display: flex;
     flex-direction: row;
-    justify-self: center;
+    justify-self: top;
+    /* align-content: top; */
     width: 100%;
-    font-size: 2rem;
+    height: 2rem;
+    font-size: 0.85rem;
+    align-items: center;
 }
 .cr-list{
   padding:0rem;
   height: 0.85rem;
   width: 0.85rem;
-  align-self: center;
-  margin-left: 5rem;
+  /* align-self: center; */
+  justify-self: end;
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0.5rem;
+  left:0rem;
+  gap:1rem;
+}
+
+.footer a{
+  color: grey;
+  text-decoration: none;
+  font-size: 0.75rem;
+  margin-left: 1px;
 }
