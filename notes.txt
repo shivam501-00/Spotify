@@ -1,0 +1,6 @@
+- SVG Icons
+For SVG Icones used : https://hugeicons.com/ 
+or other way is to copy it as element from original pages.
+
+-Filter: invert(1);
+ When we use this CSS property on any element, it applies on every color of that element like border background, text color or color. 

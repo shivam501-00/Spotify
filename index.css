@@ -21,19 +21,25 @@ body {
   display: flex;
   flex-direction: row;
   padding: 0.2rem;
+  gap: 1px;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap; */
-  width: 25vw;
+  width: 20vw;
   height: 100vh;
 }
 .content {
-  width: 70vw;
-  border: var(--border-items);
+  width: 75vw;
+  /* border: var(--border-items); */
   margin-left: 1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+
+  border-radius: 0.75rem;
+  background-color: #121212;
 }
 /*Spotify logo setting*/
 .logo_svg {
@@ -119,4 +125,47 @@ body {
   text-decoration: none;
   font-size: 0.75rem;
   margin-left: 1px;
+}
+
+/*Content CSS*/
+.keys{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 0.5rem;
+}
+
+.ex img{
+ padding-top: 0.45rem;
+  /* border: 1px black solid ; */
+  
+  height: 0.85rem;
+  width: 0.85rem;
+  filter: invert(1);
+  margin-left: 0.45rem;
+  
+}
+.ex{
+  border-radius: 50% ;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: #090909;
+}
+
+
+.c_btn{
+  margin-right: 0.25rem;
+
+}
+
+.c_nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 3.75rem;
+  align-items: center;
+  /* border: 1px white solid; */
+  background-color: #312b2b;
+  border-radius: 0.75rem;
 }
